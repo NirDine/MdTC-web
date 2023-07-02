@@ -1,6 +1,6 @@
 :root {
     --bradius: 5px;
-    
+    --showcaseHeight: 86vh;
     
     
     
@@ -50,7 +50,7 @@ header .logo
       fill: var(--mainBG);
     align-content: center;
     stroke-miterlimit:10;
-    height: 2.5em;
+    height: 1.5em;
 
 
 }
@@ -215,23 +215,64 @@ body.active .lightsOff {
     align-content: center;
     top: 0;
     left: 0;
-    height: 70vh;
+    height: var(--showcaseHeight);
     width: 100vw;
     background-position: 49.3% 50%;
     background-size:  100% auto !important;
     background-repeat: no-repeat;
-    background-image: url('/img/art/portada1.JPG');
     background-color: #2a3370;
 }
 
-.showcase::after {
-    content: "";
 
-    height: 100%;
+    .parallaxLayer {
+
+    background-size: auto 100%;
+
+        
+    }
+    
+
+
+.parallaxLayer {
+    height: var(--showcaseHeight);
+    background-position: bottom center;
+    background-size: auto cover;
+    background-repeat: repeat-x;
     width: 100%;
+    position: fixed;
 
 }
 
+
+    #layer0 {
+        background-image: url('/img/art/layer0.png');
+    }
+
+    #layer1 {
+        padding: 50% 15%
+    }
+
+    #layer2 {
+        background-image: url('/img/art/layer1.png');
+    }
+
+    #layer3 {
+        background-image: url('/img/art/layer2.png');
+    }
+
+    #layer4 {
+        background-image: url('/img/art/layer3.png');
+    }
+
+    #layer5 {
+        background-image: url('/img/art/layer4.png');
+    }
+
+    #layer11 {
+        background: rgb(0,0,0);
+        background: -webkit-linear-gradient(270deg, transparent 50%, var(--contrast)  90%);
+    }
+    
 
 
 main {

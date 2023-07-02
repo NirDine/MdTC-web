@@ -350,7 +350,8 @@ footer div {
     background-position: 92% bottom;
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 250px;
+    height: 150px;
+    padding-bottom: 20px
 }
 
 footer {

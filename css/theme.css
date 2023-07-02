@@ -188,11 +188,7 @@ footer
 
 }
 
-.showcase::after {
-    background: rgb(0,0,0);
-    background: -webkit-linear-gradient(270deg, transparent 0%, var(--contrast)  90%);
 
-}
 
 
 

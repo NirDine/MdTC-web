@@ -46,6 +46,11 @@
     
     }
     
+    #layer1 {
+        padding: 15%
+    }
+    
+    
     /* HEADER */
     
     header {
@@ -73,6 +78,7 @@
     header .logo {
       stroke: var(--contrast);
       fill: var(--contrast);
+        font-size: 1.75em;
     }
 
 
@@ -189,12 +195,7 @@
 
     }
 
-    
-    footer,
-    footer div {
-            height: 450px;
-    }
-    
+
     
     .contactContainer {
             padding: 1.5em;
@@ -202,10 +203,7 @@
     }
     
     
-    footer,
-    footer div {
-            height: 450px;
-    }
+
     
 
     #navTheme,
