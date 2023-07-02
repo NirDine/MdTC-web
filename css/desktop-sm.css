@@ -1,0 +1,365 @@
+@media (min-width: 768px ) {
+
+    
+
+ 
+    
+    
+    header {
+          padding: 20px 10% 20px 13%;
+    }
+
+    
+
+    .sliderButtons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+
+    }
+
+.sliderButtons,
+.sliderButtons:first-child{
+    top: auto;
+    right: auto;
+
+}
+
+
+
+    #products .slick-arrow {
+        flex-basis: 10%;
+
+        
+    }
+    #products .slick-arrow,
+    #products .slick-arrow button {
+
+        cursor: pointer;
+        
+    }
+
+    
+
+    #products .slick-arrow:first-child button:hover {
+        animation: poke-left 1.5s ease-in-out;
+        color: var(--accent);
+        
+    }
+    
+    #products .slick-arrow button:hover {
+        animation: poke-right 1.5s ease-in-out;
+        color: var(--accent);
+        
+    }
+
+    #products .slick-list {
+            flex-basis: 80%;
+    }
+
+
+    
+    #products .slick-dots {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: var(--bradius);
+        padding: 10px 10%
+    }
+
+    #products li {
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        padding: 10px 0.5em;
+        cursor: pointer;
+    }
+    
+    #products .slick-dots  img {
+        border-radius: var(--bradius);
+        filter: grayscale(100);
+    }
+
+    #products .slick-dots .slick-active img {
+        border-bottom: 5px solid var(--accent);
+        filter: grayscale(0);
+        transform: scale(110%);
+        transition: transform 0.05s ease-in, filter 0.07s ease-in;
+    }
+
+    #products .slick-autoplay-toggle-button {
+
+        top: 20px;
+        right: 20px;
+        background-color: var(--primary);
+        cursor: pointer;
+        padding: 0.25em 0.6em;
+    }
+    
+    #products .slick-autoplay-toggle-button:hover {
+
+        filter: brightness(105%);
+        
+    }
+
+    #products .slick-autoplay-toggle-button .slick-pause-icon,
+    #products .slick-autoplay-toggle-button .slick-play-icon {
+
+        width: 15px;
+        height: 25px;
+        background-size: 65%;
+
+    }
+
+
+    
+    
+    .item {
+    padding: 1em 1.5em;
+    }
+    
+    
+    .item h2 {
+        display: block; 
+        font-weight: 500;
+        font-size: 2em;
+        margin-bottom: 0.2em;
+
+    }
+
+    .holder {
+        flex-direction: row-reverse;
+
+    }
+    
+    .right {
+        padding-right:1.5em;
+    }
+    .right.reverse { 
+        padding-right:0em;
+        padding-left:1.5em;
+    }
+    
+    .item .left blockquote {
+
+
+        margin-bottom:1px;
+
+    }
+    
+    
+    
+    
+    
+/* common */
+.ribbon {
+    display: block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon span {
+
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: var(--accent);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: var(--mainBG);
+  font: 700 18px/1 '', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+    top: 0px;
+    transform: translateX(-24px);
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @keyframes poke-left {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            transform: translateX(-10%);
+        }
+        
+        50% {
+            transform: translateX(-5%);
+        }
+        75% {
+            transform: translateX(-10%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }  
+    
+    @keyframes poke-right {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            transform: translateX(10%);
+        }
+        
+        50% {
+            transform: translateX(5%);
+        }
+        75% {
+            transform: translateX(10%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }    
+    
+    
+}
+
+
+#about .who {
+    flex-direction: row;
+    background-size: cover ;
+
+}
+
+#about .who::after {
+    content: "";
+    position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+#about .avatar {
+
+    margin-right:3em;
+
+}
+#about .avatar img {
+    margin-top:0px;
+    
+}
+
+#about .info {
+
+    flex-basis: 55%;
+
+}
+
+.faqToggleTitle i {
+position: inherit;
+}
+
+
+
+
+
+
+.aside {
+        grid-template-columns: 1fr;
+        
+}
+.social {
+    padding: 1em 6em;
+}
+
+    
+    .social:nth-child(1) {
+        border-top-right-radius:  var(--bradius);
+
+    }
+
+    .social:nth-child(3) {
+        border-bottom-right-radius:  var(--bradius);
+
+    }
+
+.social span {
+        display: block;
+        margin-top: 1em;
+}
+
+
+
+.social span {
+
+     opacity: 0.7;   
+    transition: all 0.2s;
+}
+
+
+.social:hover span {
+
+     opacity: 1;   
+
+}
+
+
+#contact {
+    display: grid;
+	border-radius: var(--bradius);
+    grid-template-areas:
+        "contact contact aside";
+    margin-bottom: 0px;
+}
+
+
+
+footer,
+footer div {
+
+    background-position: 92% bottom;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 250px;
+}
+
+footer {
+    background-color: var(--contrast);
+    background-image: url(/img/art/parallax/parallax9.webp);
+}
+
+footer div {
+    background-color: transparent;
+    background-image: url(/img/art/parallax/parallax10.webp); 
+
+}
