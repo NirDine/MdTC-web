@@ -475,6 +475,13 @@ position: absolute;
     margin-bottom: 2px;
 }
 
+.item .left div .audio {
+
+     
+
+
+}
+
 .item .left blockquote {
 
 
@@ -598,14 +605,14 @@ position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
 
 }
 
 
 #about .who {
     display: flex;
-
+    gap: 1em;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -623,7 +630,8 @@ position: absolute;
     border-radius: 100%;
     border-width: 4px;
     border-style: solid;
-    
+    width: 350px;
+    height: 100%;
 }
 #about .info {
     height: auto;
