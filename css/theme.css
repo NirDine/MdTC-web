@@ -30,7 +30,7 @@
 p {
 
 font-family: 'Source Sans Pro', sans-serif;
-    
+
 }
 
 a {
@@ -74,12 +74,15 @@ header .logo:focus
 }
 
 
-.social.discord {
-    background: #5865F2;
+.social.youtube {
+    background: #ff0000;
 }
 
-.social.patreon {
-    background: #FF424D;
+.social.instagram {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .social.twitter {
@@ -116,7 +119,6 @@ header.navScrolled,
 .item,
 .button a:before,
 .button a:after,
-#about,
 #about .info,
 #contact,
 #contact form input,
@@ -189,6 +191,15 @@ footer
 }
 
 
+.interviewEntry .interviewInfo span {
+
+color: #9f9f9f;
+}
+
+.interviewEntry span.url {
+
+color:var(--accent);
+}
 
 
 
@@ -269,6 +280,16 @@ color: var(--accent);
     border-color: var(--selection);
 }
 
+.interviewEntry {
+        background: var(--mainBG);
+    border-radius: var(--bradius);
+
+}
+
+.interviewEntry .interviewContent {
+    color: var(--dark);
+    border-color: #2f363b1c;
+}
 
 
 
@@ -377,8 +398,8 @@ body.darkTheme .faqToggleTitle i {
     background-image: url(/img/buttons/close.svg);
 }
 
-body.darkTheme .social.discord,
-body.darkTheme .social.patreon,
+body.darkTheme .social.youtube,
+body.darkTheme .social.instagram,
 body.darkTheme .social.twitter
 {
     background: var(--mainBG);
@@ -390,15 +411,15 @@ body.darkTheme .social.twitter
 
 
 
-body.darkTheme .social.discord:hover,
-body.darkTheme .social.discord:focus {
-        background: #5865F2;
+body.darkTheme .social.youtube:hover,
+body.darkTheme .social.youtube:focus {
+        background: #ff0000;
         filter: brightness(100%);
 }
 
 
-body.darkTheme .social.patreon:hover,
-body.darkTheme .social.patreon:focus {
+body.darkTheme .social.instagram:hover,
+body.darkTheme .social.instagram:focus {
         background: #FF424D;
         filter: brightness(100%);
 }

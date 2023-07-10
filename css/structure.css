@@ -249,7 +249,15 @@ body.active .lightsOff {
     }
 
     #layer1 {
-        padding: 50% 15%
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #layer1 img {
+            width: 80%;
+        
     }
 
     #layer2 {
@@ -302,6 +310,9 @@ section + section {
     
 }
 
+p {
+    line-height: 1.1em;
+}
 
 #products {
     display: flex;
@@ -666,11 +677,12 @@ position: absolute;
 #news { 
     display: flex;
     width: 100%;
+    margin-bottom: 0.5em;
 }
 
 #news .bar {
     display: flex;
-
+    border-radius: var(--bradius) var(--bradius) 0px 0px;
     width: 100%;
 
 
@@ -697,95 +709,93 @@ position: absolute;
 
 
 
+#interviews {
+    margin-top: 0px;
+    width: 100%;
+    background: transparent;
+}
 
-.faq {
+.interviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.interviewEntry {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.interviewEntry div:has(img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.faqToggleTitle {
+.interviewEntry div:has(img)::after {
+    content: '';
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    background-image: var(--background);
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    height: 9em;
+    filter: blur(5px) brightness(70%);;
 
-padding: 25px 25px 14px;
-display: flex;
-border-top: 1px solid #00000010;
-margin-bottom: 6px;
-} 
+}
 
-.faqToggleInner .faqToggleTitle {
-
-
-border-top: 0px !important;
-
-} 
-
-.faqToggleInner .faqToggleTitle i {
-
-background: transparent;
-
-} 
-
-.faq h3 {
-display: flex;
-justify-content: space-between;
-font-size: 20px;
-margin: 0px;
-line-height: 1;
-cursor: pointer;
-font-weight:200;
-width: 100%;
+.interviewEntry img {
+    height: 9em;
+    aspect-ratio: 1 / 1;
+    z-index: 10;
+    padding: 7px;
+    border-radius: calc(var(--bradius) + 7px);
+    position: absolute;
 
 }
 
 
-.faq .active h3 {
+.interviewEntry .interviewContent {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+        border-bottom-width: 1px;
+    border-style: solid;
+    background: var(--mainBG);
 
 }
 
-.faqToggleInner {
-padding: 7px 25px 10px 25px;
-display: none;
-margin: -7px 0 6px;
-
+.interviewEntry:last-child .interviewContent {
+    border-bottom-width: 0px;
 
 }
 
-.faqToggleInner p + p {
 
+.interviewEntry .interviewInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.interviewEntry h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.interviewEntry .interviewInfo span {
+font-size: 0.9em;
+}
+
+.interviewEntry span.url {
 margin-top: 1em;
-
+font-size: 0.8em;
 }
-
-
-.faqToggleTitle a i {
-font-size: 22px;
-margin-right: 5px;
-}
-
-.faqToggleTitle i {
-position: absolute;
-right: 0;
-background-image: url(/img/buttons/close-contrast.svg);
-background-repeat: no-repeat;
-background-position: 0px 8px;
-width: 16px;
-height: 16px;
--webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
--ms-transition: all 0.3s ease;
-transition: all 0.3s ease;
-margin-inline: 20px;
-
-}
-
-.faqToggleTitle.active i {
-background-position: 0px 0px;
-    transform:rotate(180deg);
-}
-
-
-
-
-
 
 
 
@@ -800,6 +810,7 @@ background-position: 0px 0px;
     
 .contactContainer {
         padding: 1em;
+        grid-area: contact;
 
 }
 
@@ -871,7 +882,7 @@ background-position: 0px 0px;
 
 .aside {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-area: aside;
     width: 100%;
     border-radius: var(--bradius);
@@ -882,8 +893,9 @@ background-position: 0px 0px;
 
     padding: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap: 2em;
     align-items: center;
     text-decoration: none;
 
@@ -903,10 +915,7 @@ background-position: 0px 0px;
 }
 
 
-.social span {
-    display: none;
 
-}
 
 
 
