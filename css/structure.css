@@ -724,6 +724,7 @@ position: absolute;
 .interviewEntry {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
 }
 
@@ -805,7 +806,7 @@ font-size: 0.8em;
     width: 100%;
 
     margin-bottom: 20px;
-
+     border-radius: var(--bradius) var(--bradius)  0px 0px;
 }
     
 .contactContainer {
@@ -895,8 +896,8 @@ font-size: 0.8em;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
     align-items: center;
+    gap: 2em;
     text-decoration: none;
 
 

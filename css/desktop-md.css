@@ -212,7 +212,7 @@ grid-template-columns: 1fr 1fr;
 }
 
 .interviewEntry div:has(img)::after {
-    background-size: 100%;
+    background-size: cover;
 
     height: 100%;
 
