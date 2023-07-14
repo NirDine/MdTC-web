@@ -36,6 +36,12 @@ font-family: 'Source Sans Pro', sans-serif;
 a {
     text-decoration: none;
     font-weight: 400;
+    color: var(--accent);
+}
+
+.item a, .url {
+    text-decoration: underline;
+
 }
 
 
@@ -432,4 +438,8 @@ body.darkTheme .social.twitter:focus {
 
 body.fallBack.darkTheme::before {
   border-top: 16px solid var(--dark);
+}
+
+body.darkTheme a:visited {
+    color: #8e3ba1;
 }
