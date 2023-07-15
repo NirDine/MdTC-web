@@ -206,18 +206,16 @@ grid-template-columns: 1fr 1fr;
 
 }
 
-.interviewEntry div:has(img) {
+.interviewEntry .interviewImageHolder {
     flex-basis: 30%;
     min-width: 30%;
 }
 
-.interviewEntry div:has(img)::after {
-    background-size: cover;
-
-    height: 100%;
+.interviewEntry .interviewImageHolder::after {
 
 
 }
+    
 .interviewEntry img {
 
 }

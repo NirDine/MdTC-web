@@ -728,26 +728,24 @@ position: absolute;
 
 }
 
-.interviewEntry div:has(img) {
+.interviewEntry .interviewImageHolder {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.interviewEntry div:has(img)::after {
+.interviewEntry .interviewImageHolder::after {
     content: '';
-    display: flex;
-    justify-content: ;
-    align-items: center;
     background-image: var(--background);
     background-position: center;
-    background-size: 300%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    height: 9em;
+    min-height: 9em;
     filter: blur(5px) brightness(70%);;
+    -moz-appearance:initial
 
 }
 
