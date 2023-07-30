@@ -200,12 +200,106 @@ body.active .menu {
     
 }
 
-body.active .lightsOff {
+.lightsOff.active {
 
     display: flex;
     
 }
 
+
+.presalePanelHolder {
+display:none;
+width: 400px;
+background: var(--mainBG);
+z-index: 1000;
+position: fixed;
+top: 50%;
+transform: translateY(-50%);
+border-radius: var(--bradius);
+flex-direction: column;
+justify-content: center;
+    padding: 30px 20px;
+}
+
+.presalePanelHolder.active {
+
+display: flex;
+
+}
+
+.presalePanelHolder h3 {
+ font-size: 1.3em;
+
+
+}
+
+.presalePanelHolder h3,
+.presalePanelHolder h4 {
+
+    font-weight: 600;
+
+}
+
+.presalePanelHolder div {
+    padding: 5px 10px;
+
+}
+
+.presalePanelHolder p {
+    padding-block: 3px;
+
+}
+.presalePanelHolder p .price {
+ font-size: 1em;
+ font-weight: 600;
+
+}
+
+.presalePanelHolder p .discount {
+font-style: italic;
+opacity: 0.8;
+
+}
+
+.presalePanelHolder p .alias {
+font-style: italic;
+opacity: 0.8;
+    background:var(--primary);
+    display: flex;
+border-radius: var(--bardius);
+    padding: 2px 15px;
+}
+
+
+.presalePanelHolder p .disclaimer {
+
+ text-decoration: underline;
+}
+
+.presalePanelHolder .divider {
+    display: flex;
+    align-items: center;
+    
+}
+
+.presalePanelHolder .divider::before,
+.presalePanelHolder .divider::after {
+    content: '';
+    height: 1px;
+    width: 50%;
+    background: var(--contrast);
+    padding-inline: 50px;
+    margin-top: 2.5px;
+    margin-inline: 10px;
+    opacity: 0.3;
+}
+
+.presalePanelHolder .presaleButtons {
+ 
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .showcase {
@@ -595,7 +689,7 @@ position: absolute;
 
 
 .item .holder img {
-    
+    object-fit: cover;
 }
 
 .item .holder .right {

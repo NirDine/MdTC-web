@@ -165,7 +165,29 @@
             </nav>                
         </header>
 
-
+            <div class="presalePanelHolder">
+                <h3>Información de preventa</h3>
+                <div>
+                    <p>Precio de preventa <span class="price">$3.500</span> <span class="discount">(con el 30% de descuento)</span>. <span class="disclaimer">No incluye gastos de envío</span> </p>
+                    <p>(si vivís fuera de Bariloche consultame a <a href="mailto:mdetorrescurth@gmail.com">mdetorrescurth@gmail.com</a>)</p>
+                </div>
+                <div>
+                <h4>
+                    Para reservar tu ejemplar:
+                </h4>
+                <p>Transferencia bancaria: alias: <span class="alias">CHACAL.MAYO.CANADA</span></p>
+                <p>Transferencia por Mercado Pago: alias: <span class="alias">raza.pudo.tela.mp</span></p>
+                
+                <p>No olvides mandarme el comprobante a <a href="mailto:mdetorrescurth@gmail.com">mdetorrescurth@gmail.com</a> </p>
+                </div>
+                <div>
+                    <span class="divider">ó</span>
+                </div>
+                <div class="presaleButtons">
+                   <span class="button"><a onclick="escape()" href="#contact" data-content="Consultame" aria-label="      " tabindex="-1"></a></span>
+                  <span class="button"><a onclick="escape()" data-content="Volver" aria-label="      " tabindex="-1"></a></span>
+                </div>
+            </div>
         <div id="mobileDots"></div>
         <main class="">
 
@@ -173,6 +195,47 @@
 
                 <section id="products" class="">
 
+                   
+                    <!-- Presas -->
+                    <div class="item"> 
+                      <div class="holder">
+                        <div class="left">
+                            
+                            <div class="description">
+                                <h2>Presas</h2>
+                                <p>
+                                Este libro reúne dieciséis cuentos breves cuyas protagonistas son mujeres. Esclavas o cautivas, real o figuradamente. Mujeres que transitan situaciones límite, donde la salida, si existe, es difícil y dolorosa. Mujeres atrapadas, mujeres presas. El ambiente patagónico, su belleza y su hostilidad están presentes en todos los cuentos como un personaje más.
+                                </p>
+                                <p>
+                                “Son mujeres robadas; algunas de cuerpo entero, otras, desprendidas de sus almas a fuerza de dolores impuestos o auto impuestos. El libro previene desde el nombre que es, más que un título (por cierto, muy bien elegido), una advertencia. (…) Para leer Presas hay que saber guardar oxígeno y tomarlo en bocanadas propicias para recuperar el ánima. Abandonarlo en un rincón oscuro antes que el sol le dé y vuelva a convocarnos.”
+                                </p>
+                                <p class="reviwer">
+                                 —  <strong>Viviana Núñez Cabral</strong>
+                                </p>
+
+                            </div>
+                            <blockquote>
+                                <p>
+                                Presas (2023) Cuentos. San Martín de los Andes: La Grieta. 116 p. 
+                                
+                                </p>
+                            </blockquote>
+                        
+                        </div>
+                          
+                          
+                          
+                        <div class="right">
+                            <img src="img/products/presas.jpg" height="388px" width="300px" alt="       "/>
+                            <div class="holderButtons">
+                                <span class="button"><a id="presale" data-content="Comprar" aria-label="      "></a></span>
+                                <span class="button"><a href="#contact" data-content="Consultar" aria-label="    "></a></span>
+                            </div>
+                        </div>
+                      </div>  
+                      <div class="ribbon ribbon-top-left presale"><span>preventa</span></div>
+                    </div>
+                    
                     <!-- Todo lo que debemos decidir -->
                     <div class="item"> 
                       <div class="holder">
@@ -354,7 +417,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="https://youtu.be/HBfYJJrpS6Y" target="_blank">Escuchar un cuento de este libro aquí.</a>
+                                <a href="https://youtu.be/HBfYJJrpS6Y" target="_blank">Escuchar el cuento aquí.</a>
                             </div>
                             <blockquote>
                                 <p>
@@ -1049,17 +1112,24 @@
 
         <!-- MENU HANDLER -->
         <script type="text/javascript">
-            var isOpen = new Boolean(false);
-            const menuToggle = document.querySelector('.toggle');
-            const menuChild = document.querySelector('.menu ul li a');
-            const menuLastChild = document.querySelector('.lastMenuOption');
-            const menuEscape = document.querySelector('.lightsOff');
-            const showcase = document.querySelector('body');
+            var isOpen = new Boolean(false),
+                presaleOpen = new Boolean(false);
+            
+            const menuToggle = document.querySelector('.toggle'),
+                  menuChild = document.querySelector('.menu ul li a'),
+                  menuLastChild = document.querySelector('.lastMenuOption'),
+                  menuEscape = document.querySelector('.lightsOff'),
+                  showcase = document.querySelector('body');
+            
+            const presaleButton = document.querySelector('#presale'),
+                  presaleContainer = document.querySelector('.presalePanelHolder');
+            
 
             function escape() {
             menuEscape.classList.remove('active');
             menuToggle.classList.remove('active');
-            showcase.classList.remove('active');  
+            showcase.classList.remove('active');
+            presaleContainer.classList.remove('active');
             isOpen = false;
             }
 
@@ -1092,6 +1162,24 @@
                     escape();
 
             })
+            
+            /* Adding a function to display presale info */
+        
+            presaleButton.addEventListener('click', () => {
+                if (presaleOpen == false) {
+                    menuEscape.classList.toggle('active');
+                    presaleContainer.classList.toggle('active');
+                    
+                }
+                
+                else {
+   
+                }
+                
+
+            })
+            
+            
         </script>
         <script src="js/observers.js"></script>  
         <script src="js/parallax.js"></script> 
