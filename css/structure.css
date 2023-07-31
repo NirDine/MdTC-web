@@ -330,7 +330,7 @@ display: flex;
 .parallaxLayer {
     height: var(--showcaseHeight);
     background-position: bottom center;
-    background-size: auto cover;
+    background-size: cover;
     background-repeat: repeat-x;
     width: 100%;
     position: fixed;
