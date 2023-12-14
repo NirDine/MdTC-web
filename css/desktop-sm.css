@@ -174,15 +174,18 @@
   display: block;
   width: 225px;
   padding: 15px 0;
-  background-color: var(--accent);
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
-  color: var(--mainBG);
   font: 700 18px/1 '', sans-serif;
   text-shadow: 0 1px 1px rgba(0,0,0,.2);
   text-transform: uppercase;
   text-align: center;
+  background-color: var(--contrast);
+  color: var(--mainBG);
 }
-
+    
+    .ribbon.coming-soon span {
+      background-color: var(--accent);
+    }
 /* top left*/
 .ribbon-top-left {
     top: 0px;
