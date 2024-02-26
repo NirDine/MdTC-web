@@ -157,19 +157,6 @@ body.active .menu {
 }
 
 
-#navMobileTheme,
-#navTheme {
-    cursor: pointer;
-}
-#navTheme,
-.navTheme {
-    display: none;
-}
-
-
-#navMobileTheme {
-    display: flex;
-}
 
 .menu ul li a img {
     margin-top:5px;
@@ -453,7 +440,7 @@ position: absolute;
 
     #mobileDots {
         width: 100%;
-        background: #676fa3;
+
         z-index: 1;
     }
 
@@ -898,7 +885,7 @@ position: absolute;
 
 .interviewEntry .interviewContent {
     display: flex;
-    padding: 1em;
+    padding: 2em;
     flex-direction: column;
     justify-content: space-between;
         border-bottom-width: 1px;

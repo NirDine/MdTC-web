@@ -119,23 +119,28 @@ footer span {
 
 .skip-nav-link,
 .menu,
+#mobileDots,
 header.navScrolled,
-#mobileDots .slick-dots li button,
 .contentWrapper,
 .item,
 .button a:before,
 .button a:after,
 #about .info,
-#contact,
-#contact form input,
-#contact form textarea,
-.social
+#contact
 
 
 
 {
 
     background: var(--mainBG);
+    
+    
+}
+
+
+#contact form input,
+#contact form textarea,
+.social {
     
     
 }
@@ -167,6 +172,7 @@ footer
 }
 
 
+#mobileDots .slick-dots li button,
 #products .slick-prev,
 #products .slick-next,
 .item .left blockquote
@@ -295,151 +301,4 @@ color: var(--accent);
 .interviewEntry .interviewContent {
     color: var(--dark);
     border-color: #2f363b1c;
-}
-
-
-
-/* Dark Theme */
-
-
-body.darkTheme {
-    
-    --contrast: #2a2d42;
-    --mainBG: #21252E; 
-    --primary: #243650;
-    --dark: #DFDFDF;
-    --selection: #ffffff96;
-    --accent: teal;
-}
-
-
-body.darkTheme header .logo {
-    stroke: var(--dark) !important;
-    fill: var(--dark) !important;
-}
-
-body.darkTheme header .logo:hover {
-    stroke: var(--accent) !important;
-    fill: var(--accent) !important;
-}
-
-body.darkTheme .menu ul li a,
-body.darkTheme .button a::before,
-body.darkTheme .ribbon span,
-body.darkTheme .faqToggleInner,
-body.darkTheme .social span,
-body.darkTheme #news .bar::before
-{
-    color: var(--dark);
-
-}
-
-
-
-body.darkTheme #contact form textarea,
-body.darkTheme #contact form input
-{
-    background: var(--primary);
-}
-body.darkTheme #news .bar {
-    background: #262836;
-}
-
-
-
-body.darkTheme #mobileDots .slick-dots li button {
-    background: var(--dark);
-}
-
-body.darkTheme #mobileDots .slick-dots li.slick-active button {
-    background: var(--accent);
-}
-
-body.darkTheme #contact form input[type=submit] {
-    filter: brightness(160%);
-    color: var(--dark);
-
-}
-
-body.darkTheme #contact form input[type=submit]:hover,
-body.darkTheme #contact form input[type=submit]:focus
-{
-    filter: brightness(100%);
-
-}
-
-
-body.darkTheme .navScrolled .toggle {
-     background-image: url(/img/buttons/menu.svg); 
-}
-
-
-body.darkTheme .navScrolled .toggle.active {
-     background-image: url(/img/buttons/close.svg); 
-}
-
-body.darkTheme #navTheme {
-    background-image: url(/img/buttons/sun.svg);
-}
-
-body.darkTheme .menu ul li #navTheme:hover,
-body.darkTheme .menu ul li #navTheme:focus {
-    background-color: var(--accent);
-
-
-}
-body.DarkTheme #products .slick-autoplay-toggle-button .slick-pause-icon {
-    background-image: url(/img/buttons/pause.svg);
-
-}
-
-
-body.darkTheme #products .slick-autoplay-toggle-button .slick-play-icon {
-    background-image: url(/img/buttons/play.svg);
-
-}
-
-
-body.darkTheme .faqToggleTitle i {
-    background-image: url(/img/buttons/close.svg);
-}
-
-body.darkTheme .social.youtube,
-body.darkTheme .social.instagram,
-body.darkTheme .social.twitter
-{
-    background: var(--mainBG);
-    filter: brightness(150%);
-    border-bottom: 5px solid #181b22;
-   
-}
-
-
-
-
-body.darkTheme .social.youtube:hover,
-body.darkTheme .social.youtube:focus {
-        background: #ff0000;
-        filter: brightness(100%);
-}
-
-
-body.darkTheme .social.instagram:hover,
-body.darkTheme .social.instagram:focus {
-        background: #FF424D;
-        filter: brightness(100%);
-}
-
-body.darkTheme .social.twitter:hover,
-body.darkTheme .social.twitter:focus {
-        background: #1DA1F2;
-        filter: brightness(100%);    
-}
-
-body.fallBack.darkTheme::before {
-  border-top: 16px solid var(--dark);
-}
-
-body.darkTheme a:visited {
-    color: #8e3ba1;
 }

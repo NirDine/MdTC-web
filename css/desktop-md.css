@@ -240,40 +240,4 @@ grid-template-columns: 1fr 1fr;
 
     
 
-    #navTheme,
-    .navTheme {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    }
-    
-    .navTheme{ padding-left: 1em;}
-    
-    .menu ul li.navTheme:hover,
-    .menu ul li.navTheme:focus {
-        border-color: transparent;
 
-    }
-    
-    .menu ul li #navTheme:hover,
-    .menu ul li #navTheme:focus {
-        background-color: var(--dark);
-            transform: rotate(360deg);
-
-    }
-    
-    
-    #navTheme {
-        background-image: url(/img/buttons/moon.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 30px;
-        padding: 1.5em;
-        border-radius: 50%;
-        min-width: auto;
-    }
-    
-
-    #navMobileTheme,
-    .navMobileTheme {
-        display: none;
-    }
